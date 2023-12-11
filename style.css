@@ -1,0 +1,187 @@
+:root {
+    --logo-font: 'Edu QLD Beginner', sans-serif;
+    --verde: #4CAF50;
+    --verde-floresta: #228b22;
+    --verde-escuro: #006400;
+    --verde-claro: #8BC34A;
+    --oliva-parda: #6B8E23;
+    --herbal: #2E8B57;
+    --oliva-escura: #556B2F;
+    --vignette: #469536;
+    --cinza: #757575;
+    --preto: #000000;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background: var(--verde);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 8vh;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 0.125em;
+    position: fixed;
+}
+
+#logo {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: var(--preto);
+}
+
+#logo:hover {
+    transition: 0.4s;
+    opacity: 0.6;
+    color: var(--cinza);
+}
+
+#nav-list, #my-list, .skill-list, .contact-list {
+    list-style: none;
+}
+
+#nav-list .nav-item{
+    padding: 0 2rem;
+    display: inline-flex;
+    letter-spacing: 0.112em;
+}
+
+.nav-link { 
+    text-decoration: none;
+    color: var(--preto);
+    transition: 0.2s
+}
+
+a:hover {
+    opacity: 0.6;
+    color: var(--verde-escuro);
+}
+
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100%;   
+    background: var(--herbal); 
+}
+
+#perfil {
+    border: 0.2rem solid var(--preto);
+    border-radius:10rem;
+    height: 50vh;
+    width: 50vw;
+    margin-left: 4rem;
+}
+
+#my-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rem;
+}
+
+.text {   
+    text-align: justify;
+    margin: 2rem 0;
+    width: 90%;
+    line-height: 1.9;
+}
+
+#my-list {
+    line-height: 3;
+}
+
+#habilidades {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100%; 
+    background: var(--verde-floresta); 
+}
+
+#skill-list {
+    margin: 2rem 0;
+}
+.tipo-habilidades {
+    line-height: 3;
+}
+
+.icone-habilidades {
+    display: inline-flex;
+    font-size: 2.7rem;
+    padding: 1.2rem;
+    color: var(--branco);
+}
+
+.skill-title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#projetos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100%;
+    background: var(--oliva-parda);  
+}
+
+.project-image {
+    border: 0.2rem solid var(--preto);
+    border-radius: 1.2rem;
+    height: 40vh;
+    width: 40vw;
+    margin-top: 2rem;
+}
+
+.project-division {
+    text-align: center;
+}
+
+#contatos {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 30vh;
+    width: 100%; 
+    background: var(--verde); 
+}
+
+.contact-logo {
+    font-size: 2.7rem;
+    padding: 1.2rem;
+    color: var(--branco);
+}
+
+.contact-item {
+    display: inline-flex;
+}
+
+hr {
+    margin: 1px 0;
+    background: var(--preto);
+}
+
+footer {
+    display: flex;
+    background: var(--verde);
+    color: var(--preto);
+    height: 3rem;
+    flex: 1; 
+    align-items: center;
+    justify-content: center;
+}
